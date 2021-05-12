@@ -30,3 +30,12 @@ a {
   color: $color-text;
   text-decoration: none;
 }
+
+@keyframes Gradient {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}

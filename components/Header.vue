@@ -11,15 +11,21 @@
         </a>
       </div>
       <div class="Header__nav">
-        <a href="#projects" class="Header__navLink Header__navLink-projects">Projects</a>
-        <a href="#contact" class="Header__navLink Header__navLink-contact">Contact</a >
+        <a href="#projects" class="Header__navLink Header__navLink-projects" @click.prevent="scrollToSecion('projects')">Projects</a>
+        <a href="#contact" class="Header__navLink Header__navLink-contact" @click.prevent="scrollToSecion('contact')">Contact</a >
       </div>
     </div>
   </div>
 </template>
 
 <script>
-export default {};
+export default {
+  methods: {
+    scrollToSecion(anchor) {
+      document.querySelector('#' + anchor).scrollIntoView({ behavior: 'smooth' });
+    }
+  }
+};
 </script>
 
 <style lang="scss" scoped>
@@ -27,6 +33,21 @@ export default {};
   &__bar {
     @include gradient($color-blue, $color-green);
     height: 10px;
+    position: relative;
+    &::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      opacity: 0;
+      @include gradient($color-green, $color-blue);
+      animation-name: Gradient;
+      animation-duration: 3s;
+      animation-iteration-count: infinite;
+      animation-direction: alternate;
+    }
   }
 
   .container {
@@ -66,7 +87,7 @@ export default {};
     padding: 15px;
     // hover effect
     &::after {
-      opacity: 0.6;
+      opacity: 0.8;
     }
     @include hoverEffect(15px, 28px);
     &:hover {
@@ -75,10 +96,10 @@ export default {};
       }
     }
     &-projects::after {
-      @include gradient($color-blue, $color-purple);
+      @include gradient($color-blue, $color-green);
     }
     &-contact::after {
-      @include gradient($color-purple, $color-orange);
+      @include gradient($color-green, $color-blue);
     }
   }
 }

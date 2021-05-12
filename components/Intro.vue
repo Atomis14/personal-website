@@ -20,7 +20,7 @@
         </div>
       </div>
     </div>
-    <div class="Intro__image"></div>
+    <nuxt-img src="/images/introbild.jpg" width="600" draggable="false" class="Intro__image" />
     <div class="container Intro__curriculum">
       <IntroEducation />
       <IntroExperience />
@@ -45,6 +45,7 @@ export default {};
     }
     @include sm {
       font-size: 4rem;
+      margin-top: 50px;
     }
     span {
       display: block;
@@ -64,6 +65,9 @@ export default {};
     font-size: 1.3rem;
     margin: 20px 0;
     font-family: $font-family-serif;
+    @include sm {
+      margin: 10px 0;
+    }
     div {
       margin-bottom: 5px;
     }
@@ -76,11 +80,14 @@ export default {};
     margin-top: -200px;
     background-color: lightblue;
     float: right;
-    background: url('~static/images/introbild.jpg');
-    background-size: cover;
-    background-position: center right;
+    object-fit: cover;
+    object-position: center right;
+    z-index: -1;
+    position: relative;
+    user-select: none;
     @include md {
       float: none;
+      display: block;
       margin-top: -100px;
       margin-left: auto;
     }

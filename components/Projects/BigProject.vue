@@ -3,14 +3,19 @@
     <div class="BigProject__content">
       <nuxt-img
         :src="`/images/projects/${project.slug}.png`"
-        width="600"
+        width="600px"
         class="BigProject__image"
         draggable="false"
         :alt="project.name"
+        loading="lazy"
       />
       <ProjectsSmallProject :project="project" type="big" />
     </div>
-    <div class="BigProject__number" :style="`background-image: url('/icons/${index+1}.svg');`" :class="`BigProject__number--${index+1}`"></div>
+    <div
+      class="BigProject__number"
+      :style="`background-image: url('/icons/${index + 1}.svg');`"
+      :class="`BigProject__number--${index + 1}`"
+    ></div>
   </div>
 </template>
 
@@ -84,6 +89,7 @@ export default {
     object-fit: cover;
     background-color: lightgrey;
     box-shadow: rgba($color: #000000, $alpha: 0.2) 0px 2px 5px;
+    user-select: none;
     @include md {
       width: 80%;
     }

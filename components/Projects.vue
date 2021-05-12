@@ -1,8 +1,8 @@
 <template>
   <div class="Projects" id="projects">
-    <LazyProjectsBigProject v-for="(project, index) in bigProjects" :key="project.slug" :project="project" :index="index" />
+    <ProjectsBigProject v-for="(project, index) in bigProjects" :key="project.slug" :project="project" :index="index" />
     <div class="Projects__smallProjectsContainer container">
-      <LazyProjectsSmallProject v-for="(project, index) in smallProjects" :key="project.slug" :project="project" :index="index" type="small" />
+      <ProjectsSmallProject v-for="(project, index) in smallProjects" :key="project.slug" :project="project" :index="index" type="small" />
     </div>
   </div>
 </template>
