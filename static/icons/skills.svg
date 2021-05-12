@@ -1,0 +1,18 @@
+<svg width="261px" height="261px" viewBox="0 0 261 261" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+	<defs>
+		<linearGradient id="linearGradient-1" x1="0%" y1="0%" x2="100%" y2="0%" gradientTransform="rotate(0)">
+			<stop offset="0%" style="stop-color:#CDA8C5;stop-opacity:1" />
+			<stop offset="100%" style="stop-color:#F3D6C7;stop-opacity:1" />
+		</linearGradient>
+	</defs>
+	<g id="Page" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" opacity="0.6">
+		<g id="Desktop-HD" transform="translate(-89.000000, -1240.000000)">
+			<g id="code_black_24dp" transform="translate(89.000000, 1240.000000)">
+				<polygon id="Path" points="0 0 261 0 261 261 0 261">
+				</polygon>
+				<path d="M102.225,180.525 L52.2,130.5 L102.225,80.475 L87,65.25 L21.75,130.5 L87,195.75 L102.225,180.525 Z M158.775,180.525 L208.8,130.5 L158.775,80.475 L174,65.25 L239.25,130.5 L174,195.75 L158.775,180.525 L158.775,180.525 Z" id="Shape" fill="url(#linearGradient-1)" fill-rule="nonzero">
+				</path>
+			</g>
+		</g>
+	</g>
+</svg>

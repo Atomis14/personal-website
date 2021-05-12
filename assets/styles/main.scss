@@ -1,0 +1,32 @@
+@import '~assets/styles/fonts.scss';
+@import '~assets/styles/mediaqueries.scss';
+@import '~assets/styles/definitions.scss';
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 100%;
+  @include md {
+    font-size: 85%;
+  }
+}
+
+body {
+  margin: 0;
+  font-family: $font-family-sans;
+  color: $color-text;
+  background-color: $color-background-light;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 $gutter;
+}
+
+a {
+  color: $color-text;
+  text-decoration: none;
+}

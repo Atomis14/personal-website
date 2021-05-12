@@ -1,0 +1,18 @@
+<svg width="261px" height="261px" viewBox="0 0 261 261" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+	<defs>
+		<linearGradient id="linearGradient-1" x1="0%" y1="0%" x2="100%" y2="100%">
+			<stop offset="0%" style="stop-color:#CEEDDF;stop-opacity:1" />
+			<stop offset="100%" style="stop-color:#BAC8DD;stop-opacity:1" />
+		</linearGradient>
+	</defs>
+	<g id="Page" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" opacity="0.9">
+		<g id="Desktop-HD" transform="translate(-60.000000, -711.000000)">
+			<g id="school_black_24dp" transform="translate(60.000000, 711.000000)">
+				<polygon id="Path" points="0 0 261 0 261 261 0 261">
+				</polygon>
+				<path d="M130.5,33 L11,98.3333333 L54.4545455,122.071111 L54.4545455,187.404444 L130.5,229 L206.545455,187.404444 L206.545455,122.071111 L228.272727,110.202222 L228.272727,185.444444 L250,185.444444 L250,98.3333333 L130.5,33 Z M204.59,98.3333333 L130.5,138.84 L56.41,98.3333333 L130.5,57.8266667 L204.59,98.3333333 Z M184.818182,174.446667 L130.5,204.173333 L76.1818182,174.446667 L76.1818182,133.94 L130.5,163.666667 L184.818182,133.94 L184.818182,174.446667 Z" id="Shape" fill="url(#linearGradient-1)" fill-rule="nonzero">
+				</path>
+			</g>
+		</g>
+	</g>
+</svg>

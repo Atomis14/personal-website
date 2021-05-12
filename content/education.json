@@ -1,0 +1,17 @@
+[
+  {
+    "slug": "Bachelor",
+    "time": "10/2021 - current",
+    "degree": "Bachelor of Science",
+    "discipline": "Computer Science",
+    "subtitle": "Major Information Systems, Minor Software Systems",
+    "organization": "University of Zurich"
+  },
+  {
+    "slug": "HighSchool",
+    "time": "08/2016 - 08/2020",
+    "degree": "High School Diploma",
+    "discipline": "Biology, Chemistry, Computer Science",
+    "organization": "Neue Kantonsschule Aarau"
+  }
+]

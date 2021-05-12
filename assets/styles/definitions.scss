@@ -1,0 +1,60 @@
+/////////// FONTS
+
+$font-family-sans: "Inter", Helvetica, sans-serif;
+$font-family-serif: "Playfair", "Inter", serif;
+$font-weight-normal: 500;
+$font-weight-bold: 600;
+$font-weight-black: 800;
+
+/////////// COLORS
+
+$color-text: #111111;
+$color-text-light: #acacac;
+$color-background-light: white;
+
+$color-blue: #bac8dd;
+$color-green: #ceeddf;
+$color-orange: #f3d6c7;
+$color-purple: #cda8c5;
+
+/////////// MISC
+
+$box-shadow-big: rgba(black, 0.1) 0 15px 50px;
+
+$gutter: 20px;
+
+/////////// MIXINS
+
+@mixin gradient($color1, $color2) {
+  background: $color1;
+  background: linear-gradient(90deg, $color1, $color2);
+}
+
+@mixin hoverEffect($verticalPadding: false, $horizontalPadding: false) {
+  position: relative;
+  &::after {
+    transition: height 0.4s ease;
+    height: 0px;
+    content: "";
+    position: absolute;
+    right: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: -1;
+    @if $verticalPadding != false {
+      bottom: $verticalPadding;
+    } @else {
+      bottom: 0;
+    }
+    @if $horizontalPadding == false {
+      width: 100%;
+    } @else {
+      width: calc(100% - #{$horizontalPadding});
+    }
+  }
+  &:hover {
+    &::after {
+      height: 10px;
+    }
+  }
+}

@@ -1,0 +1,82 @@
+<template>
+  <div class="Footer" id="contact">
+    <div class="container">
+      <div class="Footer__icons">
+        <a href="https://www.linkedin.com/in/michel-sabbatini/" title="LinkedIn" target="_blank">
+          <img src="/icons/linkedin.svg" alt="linkedin" />
+        </a>
+        <a href="https://github.com/Atomis14" title="GitHub" target="_blank">
+          <img src="/icons/github.svg" alt="github" />
+        </a>
+      </div>
+      <a href="mailto:me@msabbatini.ch" class="Footer__mail">
+        me@msabbatini.ch
+      </a>
+      <div class="Footer__copyright">
+        &copy; 2021 Michel Sabbatini | Built with
+        <a href="https://nuxtjs.org/" target="_blank">Nuxt.js</a>
+      </div>
+    </div>
+    <div class="Footer__bar"></div>
+  </div>
+</template>
+
+<script>
+export default {};
+</script>
+
+<style lang="scss" scoped>
+.Footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin-top: 150px;
+  clear: both;
+
+  &__icons {
+    a {
+      padding: 10px;
+      opacity: 0.4;
+      transition: .4s opacity ease;
+      &:hover {
+        opacity: 0.8;
+      }
+    }
+    img {
+      width: 50px;
+      height: 50px;
+    }
+  }
+
+  &__mail {
+    display: inline-block;
+    text-align: center;
+    font-size: 1.5rem;
+    font-family: $font-family-serif;
+    margin: 30px 0;
+    // hover effect
+    &::after {
+      opacity: 0.6;
+    }
+    @include hoverEffect();
+    &::after {
+      @include gradient($color-orange, $color-purple);
+    }
+  }
+
+  &__copyright {
+    margin: 20px 0;
+    color: $color-text-light;
+    a {
+      color: $color-text-light;
+    }
+  }
+
+  &__bar {
+    width: 100%;
+    height: 10px;
+    @include gradient($color-orange, $color-purple);
+  }
+}
+</style>

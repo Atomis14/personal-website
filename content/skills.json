@@ -1,0 +1,67 @@
+[
+  {
+    "slug": "html",
+    "title": "HTML",
+    "width": "40"
+  },
+  {
+    "slug": "sass",
+    "title": "Sass",
+    "width": "40"
+  },
+  {
+    "slug": "php",
+    "title": "PHP",
+    "width": "40"
+  },
+  {
+    "slug": "javascript",
+    "title": "JavaScript",
+    "width": "30"
+  },
+  {
+    "slug": "jquery",
+    "title": "jQuery",
+    "width": "60"
+  },
+  {
+    "slug": "nodejs",
+    "title": "Node.js",
+    "width": "50"
+  },
+  {
+    "slug": "expressjs",
+    "title": "Express.js",
+    "width": "60"
+  },
+  {
+    "slug": "vuejs",
+    "title": "Vue.js",
+    "width": "35"
+  },
+  {
+    "slug": "nuxtjs",
+    "title": "Nuxt.js",
+    "width": "85"
+  },
+  {
+    "slug": "sql",
+    "title": "SQL  (MySQL / MariaDB)",
+    "width": "45"
+  },
+  {
+    "slug": "nosql",
+    "title": "NoSQL (mongoDB)",
+    "width": "85"
+  },
+  {
+    "slug": "git",
+    "title": "Git",
+    "width": "50"
+  },
+  {
+    "slug": "docker",
+    "title": "Docker",
+    "width": "40"
+  }
+]
