@@ -33,6 +33,9 @@ export default {};
   text-align: center;
   margin-top: 150px;
   clear: both;
+  @include md {
+    margin-top: 100px;
+  }
 
   &__icons {
     a {
@@ -59,7 +62,7 @@ export default {};
     text-align: center;
     font-size: 1.5rem;
     font-family: $font-family-serif;
-    margin: 30px 0;
+    margin: 15px 0 30px;
     // hover effect
     &::after {
       opacity: 0.6;
