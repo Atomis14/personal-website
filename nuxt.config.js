@@ -19,6 +19,8 @@ export default {
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
+      /* { rel: 'preconnect', href: 'https://fonts.gstatic.com' },
+      { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css2?family=Inter:wght@400;800&family=Playfair+Display:wght@500' } */
     ]
   },
 
@@ -58,6 +60,6 @@ export default {
   },
 
   image: {
-    
+
   }
 };

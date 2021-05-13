@@ -17,15 +17,27 @@
 
     async fetch() {
       this.educations = await this.$content('education').fetch(); 
-    }
+    },
+
+    /* beforeMount() {
+      window.addEventListener('scroll', function(e) {
+         const target = document.querySelector('.Education__content');
+         var scrolled = window.pageYOffset;
+         var rate = scrolled * -0.05;
+         target.style.transform = `translate3d(0px, ${rate}px, 0px)`;
+      });
+    } */
   }
 </script>
 
 <style lang="scss" scoped>
 .Education {
-  margin-top: 15vh;
+  margin-top: 12vh;
   @include md {
     margin-top: -100px;
+  }
+  @include sm {
+    margin-top: 0;
   }
 
   &__icon {
@@ -40,14 +52,18 @@
   }
 
   &__content {
-    margin-top: -100px;
+    margin-top: -80px;
     margin-left: 80px;
+    @include md {
+      margin-top: -100px;
+      transform: none !important;
+    }
     @include sm {
-      margin-top: -80px;
+      margin-top: -70px;
       margin-left: 60px;
     }
     @include xs {
-      margin-top: -70px;
+      //margin-top: -50px;
       margin-left: 30px;
     }
   }

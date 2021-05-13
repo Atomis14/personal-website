@@ -1,19 +1,9 @@
 [
   {
-    "slug": "smartsociety",
-    "title": "Website Frontend",
-    "name": "Smart Society",
-    "organization": "@Inware AG",
-    "link": "https://www.smartsociety.ch",
-    "year": "2020",
-    "skills": "HTML LESS PHP jQuery",
-    "description": "Technical planning and realization of the frontend of a landing page for a big swiss technology consulting company."
-  },
-  {
     "slug": "aromacoach",
     "title": "Website Fullstack",
     "name": "Aroma Coach",
-    "organization": "@Inware AG",
+    "organization": "Inware AG",
     "link": "https://www.aroma-coach.ch",
     "year": "2021",
     "skills": "HTML LESS PHP jQuery SQL",
@@ -30,10 +20,20 @@
     "description": "Building and planning a custom CMS with different content types, positioning of elements on the webpage and file uploads. Designing and implementing the database structure and backend data flow."
   },
   {
+    "slug": "smartsociety",
+    "title": "Website Frontend",
+    "name": "Smart Society",
+    "organization": "Inware AG",
+    "link": "https://www.smartsociety.ch",
+    "year": "2020",
+    "skills": "HTML LESS PHP jQuery",
+    "description": "Technical planning and realization of the frontend of a landing page for a big swiss technology consulting company."
+  },
+  {
     "slug": "connectfour",
     "title": "Algorithms",
     "name": "Connect Four AI",
-    "organization": "@Neue Kantonsschule Aarau",
+    "organization": "Neue Kantonsschule Aarau",
     "link": "",
     "year": "2020",
     "skills": "MatLab",
@@ -43,7 +43,7 @@
     "slug": "maturbuecher",
     "title": "Website & Algorithms",
     "name": "Book Recommendation System",
-    "organization": "@Neue Kantonsschule Aarau",
+    "organization": "Neue Kantonsschule Aarau",
     "link": "http://maturbuecher.bplaced.net",
     "year": "2019",
     "skills": "HTML CSS PHP LaTeX",

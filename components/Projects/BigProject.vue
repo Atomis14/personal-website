@@ -9,7 +9,11 @@
         :alt="project.name"
         loading="lazy"
       />
-      <ProjectsSmallProject :project="project" type="big" />
+      <ProjectsSmallProject
+        :project="project"
+        type="big"
+        :style="`margin-top: ${index * 30}px`"
+      />
     </div>
     <div
       class="BigProject__number"
@@ -22,6 +26,37 @@
 <script>
 export default {
   props: ['project', 'index'],
+
+  methods: {
+    parallax(event) {
+      window.addEventListener(event, function (e) {
+        var scrolled = window.pageYOffset;
+
+        const projectTargets = document.querySelectorAll('.SmallProject--big');
+        projectTargets.forEach((element, i) => {
+          let k = 1;
+          if (i !== 1) {
+            k = -1; // second element has different x-transform
+          }
+          element.style.transform = `translate(${30 * k}%, ${scrolled * -0.08}px)`;
+        });
+
+        /* const numberTargets = document.querySelectorAll('.BigProject__number');
+        numberTargets.forEach((element, i) => {
+          let k = 1;
+          if (i !== 1) {
+            k = -1;   // second element has different x-transform
+          }
+          element.style.transform = `translateX(${scrolled*-0.05*k}%)`;
+        }); */
+      });
+    },
+  },
+
+  beforeMount() {
+    this.parallax('scroll');
+    this.parallax('load');
+  },
 };
 </script>
 
@@ -65,13 +100,16 @@ export default {
       transform: translate(30%, -50%);
     }
   }
-  .SmallProject {
-    @include md {
-      transform: none !important;
-      margin-top: -80px !important;
-    }
-    @include xs {
-      margin-top: -40px !important;
+  &:nth-child(even),
+  &:nth-child(odd) {
+    .SmallProject {
+      @include md {
+        transform: none !important;
+        margin-top: -80px !important;
+      }
+      @include xs {
+        margin-top: -40px !important;
+      }
     }
   }
 
@@ -87,7 +125,7 @@ export default {
     width: 600px;
     height: 400px;
     object-fit: cover;
-    background-color: lightgrey;
+    @include gradient($color-orange, $color-purple, 0.2);
     box-shadow: rgba($color: #000000, $alpha: 0.2) 0px 2px 5px;
     user-select: none;
     @include md {

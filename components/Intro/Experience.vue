@@ -17,19 +17,31 @@
 
     async fetch() {
       this.experiences = await this.$content('experience').fetch();
-    }
+    },
+
+    /* beforeMount() {
+      window.addEventListener('scroll', function(e) {
+         const target = document.querySelector('.Experience__content');
+         var scrolled = window.pageYOffset;
+         var rate = scrolled * -0.05;
+         target.style.transform = `translate3d(0px, ${rate}px, 0px)`;
+      });
+    } */
   }
 </script>
 
 <style lang="scss" scoped>
 .Experience {
-  margin-top: 6vh;
+  margin-top: 4vh;
   float: right;
   width: 45%;
   @include md {
     float: none;
     width: 100%;
     margin-top: 50px;
+  }
+  @include sm {
+    //margin-top: 20px;
   }
 
   &__icon {
@@ -44,14 +56,17 @@
   }
 
   &__content {
-    margin-top: -100px;
+    margin-top: -70px;
     margin-left: 80px;
+    @include md {
+      transform: none !important;
+      margin-top: -100px;
+    }
     @include sm {
-      margin-top: -80px;
+      margin-top: -70px;
       margin-left: 60px;
     }
     @include xs {
-      margin-top: -70px;
       margin-left: 30px;
     }
   }

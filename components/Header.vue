@@ -43,10 +43,10 @@ export default {
       left: 0;
       opacity: 0;
       @include gradient($color-green, $color-blue);
-      animation-name: Gradient;
+      /* animation-name: Gradient;
       animation-duration: 3s;
       animation-iteration-count: infinite;
-      animation-direction: alternate;
+      animation-direction: alternate; */
     }
   }
 
@@ -55,6 +55,7 @@ export default {
     justify-content: space-between;
     align-items: center;
     margin-top: 40px;
+    animation: header 0.8s ease;
     @include md {
       margin-top: 20px;
     }
@@ -63,6 +64,7 @@ export default {
   &__contactIcons {
     margin-left: -5px;
     a {
+      display: inline-block;
       padding: 5px;
       opacity: 0.4;
       transition: .4s opacity ease;
@@ -103,4 +105,15 @@ export default {
     }
   }
 }
+
+/* @keyframes header {
+  from {
+    opacity: 0;
+    transform: translateY(-60%);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+} */
 </style>

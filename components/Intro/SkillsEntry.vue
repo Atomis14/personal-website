@@ -6,13 +6,7 @@
 
 <script>
 export default {
-  props: ['skill'],
-
-  computed: {
-    imageWidth() {
-      return ;
-    }
-  }
+  props: ['skill']
 };
 </script>
 

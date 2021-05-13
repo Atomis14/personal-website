@@ -36,6 +36,7 @@ export default {};
 
   &__icons {
     a {
+      display: inline-block;
       padding: 10px;
       opacity: 0.4;
       transition: .4s opacity ease;
@@ -46,6 +47,10 @@ export default {};
     img {
       width: 50px;
       height: 50px;
+      @include md {
+        width: 40px;
+        height: 40px;
+      }
     }
   }
 

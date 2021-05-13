@@ -1,6 +1,6 @@
 /////////// FONTS
 
-$font-family-sans: "Inter", Helvetica, sans-serif;
+$font-family-sans: "Inter1", Helvetica, sans-serif;
 $font-family-serif: "Playfair", "Inter", serif;
 $font-weight-normal: 500;
 $font-weight-bold: 600;
@@ -25,9 +25,9 @@ $gutter: 20px;
 
 /////////// MIXINS
 
-@mixin gradient($color1, $color2) {
+@mixin gradient($color1, $color2, $opacity: 1) {
   background: $color1;
-  background: linear-gradient(90deg, $color1, $color2);
+  background: linear-gradient(90deg, rgba($color1, $opacity), rgba($color2, $opacity));
 }
 
 @mixin hoverEffect($verticalPadding: false, $horizontalPadding: false) {

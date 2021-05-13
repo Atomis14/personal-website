@@ -27,9 +27,12 @@ export default {
 
 <style lang="scss" scoped>
 .Skills {
-  margin-top: 20vh;
+  margin-top: 23vh;
   @include md {
     margin-top: 30px;
+  }
+  @include sm {
+    //margin-top: 30px;
   }
 
   &__icon {
@@ -48,10 +51,14 @@ export default {
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    margin-top: -90px;
+    margin-top: -40px;
     margin-left: 50px;
     width: 100%;
     max-width: 300px;
+    @include md {
+      transform: none !important;
+      margin-top: -80px;
+    }
     @include sm {
       margin-top: -60px;
       margin-left: 30px;

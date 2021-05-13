@@ -28,12 +28,25 @@ export default {
   display: flex;
   flex-direction: column;
   margin-top: 90px;
+  @include md {
+    // margin-top: 150px;
+  }
+  @include sm {
+    margin-top: 110px;
+  }
 
   &__smallProjectsContainer {
     width: 100%;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+    margin-top: -150px;
+    @include lg {
+      margin-top: -180px;
+    }
+    @include md {
+      margin-top: 0;
+    }
   }
 }
 </style>

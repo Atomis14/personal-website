@@ -59,7 +59,7 @@ export default {
   }
   &--small {
     width: 48%;
-    margin-top: 40px;
+    margin-top: 60px;
     @include md {
       width: 100%;
     }
