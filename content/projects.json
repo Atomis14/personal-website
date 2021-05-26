@@ -41,12 +41,12 @@
   },
   {
     "slug": "maturbuecher",
-    "title": "Website & Algorithms",
+    "title": "High School Graduation Thesis",
     "name": "Book Recommendation System",
     "organization": "Neue Kantonsschule Aarau",
     "link": "http://maturbuecher.bplaced.net",
     "year": "2019",
     "skills": "HTML CSS PHP LaTeX",
-    "description": "For my high school graduation thesis I programmed a web-based recommendation system that helps students choose books for their final exams. Books get recommended on the in PHP implemented SlopeOne algorithm."
+    "description": "Programming a web-based recommendation system that helps students choose books for their final exams. Books get recommended on the in PHP implemented SlopeOne algorithm."
   }
 ]

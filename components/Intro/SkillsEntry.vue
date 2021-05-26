@@ -1,12 +1,17 @@
 <template>
   <div class="SkillsEntry">
-    <nuxt-img :src="`/images/skills/${skill.slug}.png`" :width="parseInt(skill.width)+50" :style="{ width: skill.width + 'px' }"/>
+    <nuxt-img
+      :src="`/images/skills/${skill.slug}.png`"
+      :width="parseInt(skill.width) + 50"
+      :style="{ width: skill.width + 'px' }"
+      :alt="skill.title"
+    />
   </div>
 </template>
 
 <script>
 export default {
-  props: ['skill']
+  props: ["skill"],
 };
 </script>
 

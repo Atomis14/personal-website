@@ -12,7 +12,7 @@
             <a href="https://www.inware.ch" target="_blank">Inware AG</a>
           </div>
           <div>
-            Aspiring Computer Science Student @
+            Prospective Computer Science Student @
             <a href="https://www.uzh.ch" target="_blank">
               University of Zurich
             </a>
@@ -26,6 +26,7 @@
         width="600"
         draggable="false"
         class="Intro__image"
+        alt="Intro image"
       />
     </div>
     <div class="container Intro__curriculum">
