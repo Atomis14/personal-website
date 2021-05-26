@@ -22,7 +22,7 @@
     </div>
     <div class="Intro__imageContainer">
       <nuxt-img
-        src="/images/introbild.jpg"
+        src="/images/introimage.jpg"
         width="600"
         draggable="false"
         class="Intro__image"
