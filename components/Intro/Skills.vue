@@ -51,7 +51,7 @@ export default {
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    margin-top: -40px;
+    margin-top: -90px;
     margin-left: 50px;
     width: 100%;
     max-width: 300px;

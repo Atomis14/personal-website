@@ -56,7 +56,7 @@
   }
 
   &__content {
-    margin-top: -70px;
+    margin-top: -100px;
     margin-left: 80px;
     @include md {
       transform: none !important;

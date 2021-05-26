@@ -52,11 +52,10 @@
   }
 
   &__content {
-    margin-top: -80px;
+    margin-top: -100px;
     margin-left: 80px;
     @include md {
       margin-top: -100px;
-      transform: none !important;
     }
     @include sm {
       margin-top: -70px;

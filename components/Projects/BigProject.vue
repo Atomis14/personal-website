@@ -12,7 +12,6 @@
       <ProjectsSmallProject
         :project="project"
         type="big"
-        :style="`margin-top: ${index * 30}px`"
       />
     </div>
     <div
@@ -25,38 +24,7 @@
 
 <script>
 export default {
-  props: ['project', 'index'],
-
-  methods: {
-    parallax(event) {
-      window.addEventListener(event, function (e) {
-        var scrolled = window.pageYOffset;
-
-        const projectTargets = document.querySelectorAll('.SmallProject--big');
-        projectTargets.forEach((element, i) => {
-          let k = 1;
-          if (i !== 1) {
-            k = -1; // second element has different x-transform
-          }
-          element.style.transform = `translate(${30 * k}%, ${scrolled * -0.08}px)`;
-        });
-
-        /* const numberTargets = document.querySelectorAll('.BigProject__number');
-        numberTargets.forEach((element, i) => {
-          let k = 1;
-          if (i !== 1) {
-            k = -1;   // second element has different x-transform
-          }
-          element.style.transform = `translateX(${scrolled*-0.05*k}%)`;
-        }); */
-      });
-    },
-  },
-
-  beforeMount() {
-    this.parallax('scroll');
-    this.parallax('load');
-  },
+  props: ['project', 'index']
 };
 </script>
 

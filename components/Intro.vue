@@ -38,26 +38,6 @@
 
 <script>
 export default {
-  methods: {
-    parallax(event) {
-      window.addEventListener(event, function (e) {
-        const target = document.querySelectorAll(
-          '.Education__content, .Skills__content, .Experience__content'
-        );
-        var scrolled = window.pageYOffset;
-        var rate = scrolled * -0.05;
-        target.forEach(
-          (element) =>
-            (element.style.transform = `translate3d(0px, ${rate}px, 0px)`)
-        );
-      });
-    },
-  },
-
-  beforeMount() {
-    this.parallax('scroll');
-    this.parallax('load');
-  },
 };
 </script>
 
@@ -93,7 +73,6 @@ export default {
     font-size: 1.3rem;
     margin: 20px 0;
     font-family: $font-family-serif;
-    animation: tagline 0.8s ease;
     @include sm {
       margin: 10px 0;
     }
@@ -111,7 +90,6 @@ export default {
     max-width: 100%;
     float: right;
     z-index: -1;
-    animation: imageContainer 0.8s ease;
     @include md {
       float: none;
       display: block;
@@ -121,7 +99,6 @@ export default {
     @include sm {
       margin-top: 0;
       margin-top: 60px;
-      animation: none;
     }
     @include xs {
       width: calc(100% - #{$gutter});
@@ -136,7 +113,6 @@ export default {
     object-position: center right;
     position: relative;
     user-select: none;
-    animation: image 0.8s ease;
   }
 
   &__curriculum {
@@ -147,45 +123,6 @@ export default {
     @include xs {
       margin-top: 70px;
     }
-  }
-}
-
-@keyframes title {
-  from {
-    opacity: 0;
-    transform: translateY(-30%);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0%);
-  }
-}
-@keyframes tagline {
-  from {
-    opacity: 0;
-    transform: translateY(50%);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0%);
-  }
-}
-@keyframes image {
-  from {
-    opacity: 0;
-    transform: translateX(50%);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0%);
-  }
-}
-@keyframes imageContainer {
-  from {
-    width: 0;
-  }
-  to {
-    width: 450px;
   }
 }
 </style>

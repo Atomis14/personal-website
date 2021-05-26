@@ -28,9 +28,6 @@ export default {
   display: flex;
   flex-direction: column;
   margin-top: 90px;
-  @include md {
-    // margin-top: 150px;
-  }
   @include sm {
     margin-top: 110px;
   }
@@ -40,10 +37,7 @@ export default {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    margin-top: -150px;
-    @include lg {
-      margin-top: -180px;
-    }
+    margin-top: -50px;
     @include md {
       margin-top: 0;
     }
