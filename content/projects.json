@@ -10,11 +10,21 @@
     "description": "Technical planning and realization of an online business platform for coachings. Building a member space with courses and lectures with online shop integration. Building an interface for exporting customers to an external CRM-system."
   },
   {
+    "slug": "schreinerled",
+    "title": "Website Fullstack",
+    "name": "schreinerLED",
+    "organization": "Inware AG",
+    "link": "http://www.dev-schreinerled.ch.2.inware.ch/de/konfigurator?step=1",
+    "year": "2021",
+    "skills": "HTML LESS PHP jQuery SQL",
+    "description": "Building an online configurator for LED-Bars. Changing values are immediately reflected in the 3D preview-image. Fully configured units can be bundled to an order, which gets transmitted to an external CRM-System."
+  },
+  {
     "slug": "azmuehlefeld",
     "title": "Website Backend",
     "name": "Alterszentrum Mühlefeld",
     "organization": "Freelance",
-    "link": "",
+    "link": "https://www.azmuehlefeld.ch",
     "year": "2021",
     "skills": "HTML SCSS PHP SQL jQuery",
     "description": "Building and planning a custom CMS with different content types, positioning of elements on the webpage and file uploads. Designing and implementing the database structure and backend data flow."

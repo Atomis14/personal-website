@@ -27,7 +27,7 @@
 
 <script>
 export default {
-  props: ['project', 'type'],
+  props: ['project', 'type']
 };
 </script>
 

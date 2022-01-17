@@ -8,15 +8,12 @@
         </h1>
         <div class="Intro__tagline">
           <div>
-            Fullstack Web Developer @
-            <a href="https://www.inware.ch" target="_blank">Inware AG</a>
-          </div>
-          <div>
-            Prospective Computer Science Student @
+            Computer Science Student @
             <a href="https://www.uzh.ch" target="_blank">
               University of Zurich
             </a>
           </div>
+          <div>Fullstack Web Developer</div>
         </div>
       </div>
     </div>
