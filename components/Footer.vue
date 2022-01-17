@@ -13,7 +13,7 @@
         me@msabbatini.ch
       </a>
       <div class="Footer__copyright">
-        &copy; 2021 Michel Sabbatini | Built with
+        &copy; 2022 Michel Sabbatini | Built with
         <a href="https://nuxtjs.org/" target="_blank">Nuxt.js</a>
       </div>
     </div>

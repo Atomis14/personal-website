@@ -17,7 +17,7 @@
     "link": "http://www.dev-schreinerled.ch.2.inware.ch/de/konfigurator?step=1",
     "year": "2021",
     "skills": "HTML LESS PHP jQuery SQL",
-    "description": "Building an online configurator for LED-Bars. Changing values are immediately reflected in the 3D preview-image. Fully configured units can be bundled to an order, which gets transmitted to an external CRM-System."
+    "description": "Building an online configurator for LED-bars. Changing values are immediately reflected in the 3D preview-image. Fully configured units can be bundled to an order, which gets transmitted to an external CRM-System."
   },
   {
     "slug": "azmuehlefeld",
