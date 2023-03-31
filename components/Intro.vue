@@ -13,7 +13,6 @@
               University of Zurich
             </a>
           </div>
-          <div>Fullstack Web Developer</div>
         </div>
       </div>
     </div>
